@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67d5edbd-d952-4b0b-b46b-4a9dcd744199" name="Changes" comment="Börja klasser">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bokning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bokningssystem.java" afterDir="false" />
+    <list default="true" id="67d5edbd-d952-4b0b-b46b-4a9dcd744199" name="Changes" comment="Gjort det möjligt att boka och avboka">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bokningssystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bokningssystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Restaurang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Restaurang.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679906587246</updated>
-      <workItem from="1679906589981" duration="16052000" />
+      <workItem from="1679906589981" duration="20988000" />
     </task>
     <task id="LOCAL-00001" summary="Börja klasser">
       <created>1679908198826</created>
@@ -68,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679908198826</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Gjort det möjligt att boka och avboka">
+      <created>1680513164306</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680513164306</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +90,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Börja klasser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Börja klasser" />
+    <MESSAGE value="Gjort det möjligt att boka och avboka" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gjort det möjligt att boka och avboka" />
   </component>
 </project>

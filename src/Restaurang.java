@@ -6,6 +6,7 @@ public class Restaurang {
     int platser;
     ArrayList<String> menu = new ArrayList<String>();
 
+
     public Restaurang(String namn, int platser){
     this.namn = namn;
     this.platser = platser;
