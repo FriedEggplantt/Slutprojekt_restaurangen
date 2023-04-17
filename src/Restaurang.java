@@ -2,19 +2,19 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Random;
 public class Restaurang {
-    String namn;
-    int platser;
-    ArrayList<String> menu = new ArrayList<String>();
+    String namn; //namnet på restaurangen
+    int platser; //antal sittplatser som restaurangen har
+    ArrayList<String> menu = new ArrayList<String>(); //en lista på all mat som finns i restaurangen
+    ArrayList<Integer> restBooks = new ArrayList<Integer>(); //antal bokningar i restaurangen
 
-
-    public Restaurang(String namn, int platser){
+    public Restaurang(String namn, int platser){ //konstruktor för en restaurang
     this.namn = namn;
     this.platser = platser;
 takenSeats();
 createMenu();
     }
 
-    public void createMenu() {
+    public void createMenu() { //Menyer i menu arraylistan, när en restaurang  med ett specifikt namn bildas så kommer menyen kopplad till den namnet att bli restaurangens meny.
         if(this.namn.equals("Fed Lobster")){
             menu.add("Fiskpinnar med potatismos & gröna bönor");
             menu.add("Smörbakad hummer med citron");

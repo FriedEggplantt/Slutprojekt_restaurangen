@@ -1,15 +1,14 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 public class Bokningssystem {
-    ArrayList<Integer> Bookings = new ArrayList<Integer>();
-    ArrayList<Restaurang> rests = new ArrayList<Restaurang>();
-    int people;
-    Scanner val = new Scanner(System.in);
+    ArrayList<Integer> Bookings = new ArrayList<Integer>(); //arraylist av alla bokningar
+    ArrayList<Restaurang> rests = new ArrayList<Restaurang>(); //arraylist av alla restauranger
+    int people; //folk som kommer bokas/avbokas i restauranger
+    Scanner val = new Scanner(System.in); //input val för användaren
 
     public Bokningssystem() {
         addRestaurants();
         while (true) {
-            while (true) {
                 System.out.println("Välj restaurang:");
                 System.out.println("1 - Fed Lobster");
                 System.out.println("2 - China Express");
@@ -34,7 +33,6 @@ public class Bokningssystem {
                             if (action1 == 2) {
                                 break;
                             }
-
                         } else {
                             Bookings.add(people);
                             currentRest.platser = currentRest.platser - people;
@@ -63,10 +61,9 @@ public class Bokningssystem {
                         System.out.println(currentRest.menu.get(i));
                     }
                 }
-            }
             System.out.println();
             System.out.println("Vad vill du göra?");
-            System.out.println("1 - Gå till menyn");
+            System.out.println("1 - Gå till huvudmenyn");
             System.out.println("2 - Avsluta");
             int lastChoice = val.nextInt();
             if (lastChoice == 2) {
@@ -74,9 +71,13 @@ public class Bokningssystem {
             }
         }
     }
-    public void addRestaurants() {
+    public void addRestaurants() { //Här läggs till nya restauranger i restaurang arrraylistan, med nya namn och antal platser som finns i restaurangen.
         rests.add(new Restaurang("Fed Lobster", 50));
         rests.add(new Restaurang("China Express", 80));
         rests.add(new Restaurang("Beast Borgir", 30));
+    }
+
+    public void huvudMeny(){
+
     }
 }
