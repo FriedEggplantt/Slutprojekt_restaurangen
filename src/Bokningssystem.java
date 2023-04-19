@@ -9,10 +9,7 @@ public class Bokningssystem {
     public Bokningssystem() {
         addRestaurants();
         while (true) {
-                System.out.println("Välj restaurang:");
-                System.out.println("1 - Fed Lobster");
-                System.out.println("2 - China Express");
-                System.out.println("3 - Beast Borgir");
+                huvudMeny();
                 int chooseRestaurant = val.nextInt();
                 Restaurang currentRest = rests.get(chooseRestaurant - 1);
                 System.out.println("Vad vill du göra?");
@@ -78,6 +75,22 @@ public class Bokningssystem {
     }
 
     public void huvudMeny(){
-
+        System.out.println("Välj restaurang:");
+        int a = 1;
+        for (Restaurang i: rests) {
+            System.out.println(a + ": " + i.namn);
+            a++;
+        }
     }
-}
+    public int catchErrors() {
+        while (true) {
+            try {
+
+            } catch (Exception e) {
+                System.out.println("Invalid input! Please try again");
+            }
+        }
+        return int;
+    }
+    }
+
