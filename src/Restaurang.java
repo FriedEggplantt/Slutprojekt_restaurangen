@@ -1,11 +1,11 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.Random;
 public class Restaurang {
     String namn; //namnet på restaurangen
     int platser; //antal sittplatser som restaurangen har
     ArrayList<String> menu = new ArrayList<String>(); //en lista på all mat som finns i restaurangen
     ArrayList<Integer> restBooks = new ArrayList<Integer>(); //antal bokningar i restaurangen
+    ArrayList<Integer> bookings = new ArrayList<Integer>(); //arraylist av alla bokningar
 
     public Restaurang(String namn, int platser){ //konstruktor för en restaurang
     this.namn = namn;
