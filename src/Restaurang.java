@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Random;
+
 public class Restaurang {
     String namn; //namnet på restaurangen
     int platser; //antal sittplatser som restaurangen har
@@ -7,15 +8,15 @@ public class Restaurang {
     ArrayList<Integer> restBooks = new ArrayList<Integer>(); //antal bokningar i restaurangen
     ArrayList<Integer> bookings = new ArrayList<Integer>(); //arraylist av alla bokningar
 
-    public Restaurang(String namn, int platser){ //konstruktor för en restaurang
-    this.namn = namn;
-    this.platser = platser;
-takenSeats();
-createMenu();
+    public Restaurang(String namn, int platser) { //konstruktor för en restaurang
+        this.namn = namn;
+        this.platser = platser;
+        takenSeats();
+        createMenu();
     }
 
     public void createMenu() { //Menyer i menu arraylistan, när en restaurang  med ett specifikt namn bildas så kommer menyen kopplad till den namnet att bli restaurangens meny.
-        if(this.namn.equals("Fed Lobster")){
+        if (this.namn.equals("Fed Lobster")) {
             menu.add("Fiskpinnar med potatismos & gröna bönor");
             menu.add("Smörbakad hummer med citron");
             menu.add("Skaldjurssopa med musslor");
@@ -24,7 +25,7 @@ createMenu();
             menu.add("Smörstekta pilgrimsmusslor med vitlök");
             menu.add("Skaldjursrisotto");
         }
-        if(this.namn.equals("China Express")){
+        if (this.namn.equals("China Express")) {
             menu.add("Bao steamed buns");
             menu.add("Bingchiling");
             menu.add("Peking Duck");
@@ -33,7 +34,7 @@ createMenu();
             menu.add("Boiled pig feet");
             menu.add("Mapo tofu");
         }
-        if(this.namn.equals("Beast Borgir")){
+        if (this.namn.equals("Beast Borgir")) {
             menu.add("Steak with grilled potato");
             menu.add("500g burger with caramelized onion and homemade chilimayonnaise sauce");
             menu.add("Mama's lasagne");
@@ -44,11 +45,11 @@ createMenu();
         }
     }
 
-    public void takenSeats(){ //Den här metoden gör så att det är en random antal tagna platser redan i restaurangen, så att det är mer realistisk.
-Random randomNumber = new Random();
-int maxSeats = this.platser;
-int randomNum = randomNumber.nextInt(maxSeats + 1); //1 läggs till så att random nummer kan också vara this.platser
-int availableSeats = this.platser - randomNum; //Säten som finns är totala platser minus en random nummer som ska föreställa tagna platser.
-this.platser = availableSeats;
+    public void takenSeats() { //Den här metoden gör så att det är en random antal tagna platser redan i restaurangen, så att det är mer realistisk.
+        Random randomNumber = new Random();
+        int maxSeats = this.platser;
+        int randomNum = randomNumber.nextInt(maxSeats + 1); //1 läggs till så att random nummer kan också vara this.platser
+        int availableSeats = this.platser - randomNum; //Säten som finns är totala platser minus en random nummer som ska föreställa tagna platser.
+        this.platser = availableSeats;
     }
 }

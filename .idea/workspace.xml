@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67d5edbd-d952-4b0b-b46b-4a9dcd744199" name="Changes" comment="Gjort om allt till metoder, gjort felhantering, givit alla restauranger egna bokningar">
+    <list default="true" id="67d5edbd-d952-4b0b-b46b-4a9dcd744199" name="Changes" comment="Ett klart boknigssystem, utan arv">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Användare.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bokning.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bokningssystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bokningssystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RestaurangAdmin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Singel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SystemAdmin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Restaurang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Restaurang.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +20,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,18 +38,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "actions.on.save"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,7 +60,10 @@
       <option name="presentableId" value="Default" />
       <updated>1679906587246</updated>
       <workItem from="1679906589981" duration="34677000" />
-      <workItem from="1682425566864" duration="5482000" />
+      <workItem from="1682425566864" duration="6133000" />
+      <workItem from="1683114271181" duration="766000" />
+      <workItem from="1683118548561" duration="2883000" />
+      <workItem from="1683532902335" duration="4187000" />
     </task>
     <task id="LOCAL-00001" summary="Börja klasser">
       <created>1679908198826</created>
@@ -105,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682327615905</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ett klart boknigssystem, utan arv">
+      <created>1682513910675</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682513910675</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +138,7 @@
     <MESSAGE value="Mer kommentarer" />
     <MESSAGE value="Fixat lite mer, har inte kunnat göra så mycket" />
     <MESSAGE value="Gjort om allt till metoder, gjort felhantering, givit alla restauranger egna bokningar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gjort om allt till metoder, gjort felhantering, givit alla restauranger egna bokningar" />
+    <MESSAGE value="Ett klart boknigssystem, utan arv" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ett klart boknigssystem, utan arv" />
   </component>
 </project>

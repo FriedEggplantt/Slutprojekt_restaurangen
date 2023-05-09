@@ -119,11 +119,13 @@ checkMenu(currentRest);
 input = val.nextInt(); //Ett input testas
 if(input<= 0){ //inget input ska vara mindre än 0 för denna projekt, därför kommer det bli fel
                     System.out.println("ERROR! Försök igen");
+    val.next();
                 }else{
     break; //ifall det inte är över 0 och det är inget fel så kommer loopen breakas
                 }
             } catch (Exception e) {
                 System.out.println("ERROR! Försök igen"); //ifall det har kommit något
+                val.next();
             }
         }
         return input; //returnar info för att kunna använda det i programmet.
